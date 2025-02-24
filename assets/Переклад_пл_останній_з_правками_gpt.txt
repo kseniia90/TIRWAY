@@ -1,0 +1,73 @@
+Переклад пл останній з правками gpt
+
+
+1. Instalacja nawigacji dla TIR
+
+Zamów zdalną instalację nawigacji dla ciężarówek na Twoje urządzenie:
+
+Tablet | Smartphone | Nawigacja
+
+Zamów połączenie
+
+Zamów połączenie, a skontaktujemy się z Tobą w ciągu kilku minut!
+
+Aby zainstalować nawigację, wymagane jest stabilne połączenie internetowe.
+Zamów usługę telefonicznie przez stronę lub pozostaw wniosek na tej stronie.
+Możesz także wysłać urządzenie do naszego miasta Wrocław.
+
+Rodzaje i ceny aplikacji, które instalujemy
+
+RABATY
+
+Instalacja dwóch aplikacji – 15€
+Pełny zestaw aplikacji – 18€
+UWAGI
+
+W momencie instalacji nawigacji otrzymasz najnowsze mapy, radary i Punkty Interesów.
+Nowe mapy dla wszystkich aplikacji są wydawane dwa razy do roku – wiosną i jesienią.
+
+BONUSY
+
+Do instalacji każdej aplikacji otrzymasz dodatkowo następujące aplikacje:
+
+Antyradar CamSam PLUS – aplikacja do ostrzegania o mobilnych i stacjonarnych kamerach kontroli prędkości, remontach i korkach w Europie.
+Subskrypcja Premium na 3 miesiące dla aplikacji Tochki Interesa Cadence (tylko dla nowych użytkowników). Bardzo przydatna aplikacja dla kierowców, umożliwiająca znalezienie parkingów, stref przemysłowych, sklepów z dostępem i innych użytecznych miejsc w Europie.
+Map2Geo – aplikacja do przenoszenia współrzędnych z Google Maps do nawigacji iGO NextGen i Sygic Truck.
+OPISY I ZRZUTY EKRANU APLIKACJI
+
+iGO Primo
+
+Jest to jedna z najstarszych aplikacji nawigacyjnych dla TIR. Nadal cieszy się dużą popularnością zarówno wśród doświadczonych kierowców, jak i nowicjuszy, którzy szybko opanowują tę nawigację.
+
+Świetna, niezawodna aplikacja, w której znajdziesz wszystko, co niezbędne do komfortowej pracy. iGO Primo jest prosta, wygodna i łatwa do zrozumienia dla każdego. Zawiera ikony popularnych stacji paliw, sklepów i parkingów, a także Punkty Interesów. iGO Primo doskonale wytycza trasy dla ciężarówek, umożliwia wyszukiwanie parkingów po trasie, omijanie określonych odcinków lub krajów, dodawanie punktów pośrednich, wyszukiwanie współrzędnych i wiele innych przydatnych funkcji.
+
+Polecamy tę nawigację dla początkujących kierowców lub tych, którzy potrzebują niezawodnej i łatwej w obsłudze nawigacji.
+
+Instaluje się na tabletach, nawigacjach i starszych modelach telefonów.
+
+iGO NextGen
+
+Nowa wersja aplikacji iGO. Bardziej profesjonalna i skomplikowana nawigacja. Zainstalowany dodatkowy zmodyfikowany skin stworzony przez mistrza Pongo. Ten skin rozszerza możliwości i zmienia wygląd aplikacji. iGO NextGen używa tych samych map co iGO Primo, a ogólna logika tych aplikacji jest podobna, ale NextGen jest bardziej nowoczesna i funkcjonalna.
+
+Dostępnych jest znacznie więcej ustawień, co pozwala maksymalnie dostosować aplikację do swoich potrzeb. Istnieje możliwość przenoszenia przycisków szybkiego dostępu do kabiny i ich konfigurowania. Całe sterowanie odbywa się za pomocą przycisku „Menu” w prawym dolnym rogu. Zawiera ikony popularnych stacji paliw, sklepów i parkingów, a także Punkty Interesów.
+
+Przy dostępie do internetu aplikacja pokazuje korki, remonty i zamknięte drogi, ale nie zawsze są one aktualne, dlatego zaleca się sprawdzanie z Google Maps. Istnieje wygodna funkcja wysyłania współrzędnych do Google Maps – można bez problemu sprawdzić parking lub wjazd. Z kolei przy pomocy aplikacji Map2Geo, którą dostarczymy jako bonus, można przenieść współrzędne z Google Maps do iGO NextGen.
+
+Dostosowana do wszystkich urządzeń z Androidem.
+
+Sygic Truck
+
+Sygic Truck – jedna z nowoczesnych nawigacji dla ciężarówek. Nie jest tak popularna jak iGO, ale ma swoich zwolenników. Według opinii kierowców dobrze pokazuje parkingi po trasie i ma nowoczesny oraz przyjemny wygląd.
+
+Sygic Truck często instaluje się na tabletach roboczych w firmach transportowych. W ustawieniach można wskazać niebezpieczny ładunek (ADR). Działa płynnie i stabilnie, znacznie różni się od iGO, dlatego trzeba się do niej przyzwyczaić.
+
+Istnieje możliwość wyszukiwania współrzędnych, wytyczania kilku wariantów tras i wielu innych funkcji. Za pomocą aplikacji Map2Geo, którą dostarczymy jako bonus, można przenieść współrzędne z Google Maps do Sygic Truck.
+
+Zalecamy zainstalowanie jej razem z iGO, a podczas jazdy wybór optymalnej opcji.
+
+Dostosowana do wszystkich nowoczesnych urządzeń z Androidem.
+
+Пояснення змін:
+Я змінив деякі конструкції для більшої гладкості читання, наприклад, "w której jest wszystko" замінив на "w której znajdziesz wszystko", що є більш природним для опису функцій.
+Також змінив деякі фрази, щоб уникнути повторення і зробити текст менш механічним (наприклад, замінив "Dostępnych jest znacznie więcej różnych ustawień" на "Dostępnych jest znacznie więcej ustawień").
+Текст тепер виглядає органічно і граматично правильним, без зайвих складнощів або плутанини.

@@ -1,0 +1,1478 @@
+<style type="text/css">
+    @import "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.layout-aside,
+.breadcrumbs,
+.main-h,
+.heading.heading--xl {
+    display: none;
+}
+
+.header {
+    margin-bottom: 0;
+}  
+
+.layout {
+    margin-bottom: 0;
+}
+
+.layout-main-inner {
+    padding-left: 0;
+}
+
+:root {
+    --accent: #2CB2FF;
+    --text-color: #2C3E50;
+    --text-dark: #252229;
+    --white: #ffffff;
+}
+
+.wrapper-trw {
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth !important;
+}
+
+.container-trw {
+    min-height: 100%;
+    /* max-width: 1470px; 
+    padding: 0 15px; */
+    margin: 0 auto;
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 24.51px !important;
+    color: var(--text-dark);
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+.container-trw h1,
+.container-trw h2,
+.container-trw h3,
+.container-trw p {
+    margin: 0;
+}
+
+.container-trw button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-trw ul,
+.container-trw ol {
+    list-style: none;
+    padding: 0 !important;
+    padding-inline-start: 0px !important;
+}
+
+.margin-bottom-trw {
+    margin-bottom: 70px !important;
+}
+
+#bonusy,
+#update-map {
+    scroll-margin-top: 30px;
+}
+
+.trw-title {
+    font-size: 32px !important;
+    text-transform: uppercase;
+    line-height: 43.58px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.trw-subtitle {
+    font-size: 24px !important;
+    text-transform: uppercase;
+    line-height: 32.68px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.trw__button {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 16px 24px !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.2s ease !important;
+    color: var(--white) !important;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    cursor: pointer;
+}
+
+.trw__button:hover {
+    color: var(--accent) !important;
+    background: transparent;
+}
+
+.trw-blue-text {
+    color: var(--accent);
+}
+
+.trw-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+}
+
+.trw-list li {
+    position: relative;
+    display: inline;
+    margin: 0;
+    padding-left: 28px !important;
+}
+
+.trw-list li::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 5px !important;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.banner-trw {
+    position: relative;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.banner-trw::before,
+.banner-trw::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    height: calc(100% - 84px);
+    width: 3.611111%; /* 52/1440 */
+    background: var(--accent);
+}
+
+.banner-trw::before {
+    left: 0;
+    border-radius: 0 30px 30px 0;
+}
+
+.banner-trw::after{
+    right: 0;
+    border-radius: 30px 0 0 30px;
+}
+
+.banner-trw__bg {
+    background: url(/content/uploads/images/banner_trw_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 62px 60px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.banner-trw__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px !important;
+    font-weight: 700;
+    line-height: 32.68px !important;
+    text-align: center;
+}
+
+.banner-trw__title {
+    font-weight: 700;
+    font-size: 60px !important;
+    line-height: 84px !important;
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+}
+
+.banner-trw__title>span {
+    display: block;
+}
+
+.banner-trw__list {
+    margin: 0 auto 20px !important;
+}
+
+.banner-trw__list li {
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-left: 35px !important;
+}
+
+.banner-trw__list li::before {
+    top: 50% !important;
+    transform: translateY(-50%);
+    display: block;
+    width: 23px;
+    height: 23px;
+    border-radius: 6px;
+}
+
+.banner-trw__desc {
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 21.79px !important;
+}
+
+.desc-trw {
+    max-width: 1189px;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 32.68px !important;
+    text-align: center;
+}
+
+.programs-trw {
+    text-align: center;
+}
+
+.programs-trw .trw-title {
+    margin-bottom: 50px;
+}
+
+.programs-trw-content {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.programs-trw-content .item-trw {
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 40px 30px 36px;
+    border-radius: 16px;
+    background: var(--white);
+}
+
+.programs-trw-content .item-trw-img {
+    max-width: 135px;
+    max-height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.programs-trw-content .item-trw-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.programs-trw-content .item-trw-subtitle {
+    flex: 1 0 auto;
+    margin: 0 !important;
+    font-size: 20px !important;
+    line-height: 27.24px !important;
+}
+
+.programs-trw-content .item-trw-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.programs-trw-content .item-trw-price.bonus {
+    position: relative;
+    cursor: pointer;
+}
+
+.programs-trw-content .tooltip-info_trw {
+    position: absolute;
+    z-index: 10;
+    top: -70px;
+    left: 90%;
+    transform: translateX(-50%);
+    display: block;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  
+  .programs-trw-content .item-trw-price.bonus:hover .tooltip-info_trw,
+  .programs-trw-content .item-trw-price.bonus:focus .tooltip-info_trw,
+  .programs-trw-content .item-trw-price.bonus:active .tooltip-info_trw {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tooltip-info_trw>span {
+    display: block;
+    position: relative;
+    padding: 12px;
+    background-color: var(--white);
+    font-size: 14px !important;
+    line-height: 16px !important;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px -2px #1B212C1F;
+  }
+
+  .tooltip-info_trw>span:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip-info_trw>span:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 16px;
+	margin-left: -16px;
+}
+
+.programs-trw-content .item-trw-price.bonus .price::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    background: url('data:image/svg+xml,<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_381_929)"><path d="M9.5 0.05896C4.52528 0.05896 0.5 4.0846 0.5 9.05896C0.5 14.0337 4.52564 18.059 9.5 18.059C14.4747 18.059 18.5 14.0333 18.5 9.05896C18.5 4.08424 14.4743 0.05896 9.5 0.05896ZM9.5 16.6527C5.30259 16.6527 1.90625 13.2561 1.90625 9.05896C1.90625 4.86155 5.30287 1.46521 9.5 1.46521C13.6974 1.46521 17.0938 4.86183 17.0938 9.05896C17.0938 13.2564 13.6971 16.6527 9.5 16.6527Z" fill="%232CB2FF"/><path d="M9.5 7.59399C9.11166 7.59399 8.79688 7.90878 8.79688 8.29712V12.825C8.79688 13.2133 9.11166 13.5281 9.5 13.5281C9.88834 13.5281 10.2031 13.2133 10.2031 12.825V8.29712C10.2031 7.90878 9.88834 7.59399 9.5 7.59399Z" fill="%232CB2FF"/><path d="M9.5 6.73303C10.0242 6.73303 10.4492 6.30805 10.4492 5.78381C10.4492 5.25957 10.0242 4.83459 9.5 4.83459C8.97576 4.83459 8.55078 5.25957 8.55078 5.78381C8.55078 6.30805 8.97576 6.73303 9.5 6.73303Z" fill="%232CB2FF"/></g><defs><clipPath id="clip0_381_929"><rect width="18" height="18" fill="white" transform="translate(0.5 0.161499)"/></clipPath></defs></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.programs-trw-content .item-trw-price .price {
+    color: var(--accent);
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 32.68px !important;
+}
+
+.programs-trw-content .trw__button {
+    padding: 8px 16px !important;
+    font-weight: 400 !important;
+    text-transform: none;
+}
+
+.discounts-trw {
+    display: grid;
+    grid-template-columns: minmax(300px, 41%) 1fr;
+    gap: 30px;
+}
+
+.discounts-trw .col-trw {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.discounts-trw .col1-trw {
+    max-width: 580px;
+}
+
+.discounts-trw .item-trw {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px;
+    border-radius: 6px;
+    background: var(--white);
+}
+
+.discounts-trw .item-trw-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.discounts-trw .item-trw-img {
+    max-width: 65px;
+    max-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discounts-trw .item-trw-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.discounts-trw .trw-list,
+.descriptions-trw .trw-list {
+    flex-direction: column;
+}
+
+.descriptions-trw .trw-title {
+    text-align: center;
+}
+
+.descriptions-trw .item-trw {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 100px;
+    scroll-margin-top: 20px;
+}
+
+.descriptions-trw .item-trw> .container-trw {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scroll-margin-bottom: 20px;
+}
+
+.descriptions-trw .item-trw-img,
+.descriptions-trw .item-trw-subtitle {
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.descriptions-trw .item-trw-subtitle {
+    margin-bottom: 20px;
+}
+
+.descriptions-trw .slider-screen {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.descriptions-trw .trw__slider {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.trw__slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptions-trw .slider-screen  {
+    position: relative;
+    max-width: 1480px;
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.descriptions-trw .slider-screen::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 20px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.descriptions-trw .slider-screen::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 20px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.trw__slider .swiper-slide {
+    height: auto !important;
+}
+
+.trw__slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trw__slider .swiper-button {
+    box-sizing: border-box;
+    height: 56px !important;
+    width: 35px !important;
+    position: absolute;
+    z-index: 60;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: transparent !important;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease !important;
+}
+
+.trw__slider .swiper-button-next {
+    right: -17px !important;
+}
+
+.trw__slider .swiper-button-prev {
+    left: -17px !important;
+}
+
+.trw__slider .swiper-button-prev:after,
+.trw__slider .swiper-button-next:after {
+    color: var(--text-dark) !important;
+    font-size: 20px;
+}
+
+.trw__slider .swiper-pagination {
+    position:  static!important;
+    padding-top: 26px;
+}
+
+.descriptions-trw .trw__button {
+    align-self: center;
+}
+
+@media (max-width: 992px) {
+    .margin-bottom-trw {
+        margin-bottom: 50px !important;
+    }
+    
+    .discounts-trw {
+        gap: 20px;
+    }
+    
+    .discounts-trw .col-trw {
+        gap: 20px;
+    }
+    
+    .discounts-trw .item-trw {
+        gap: 25px;
+        padding: 30px 20;
+    }
+    
+    .discounts-trw .item-trw-row {
+        gap: 15px;
+    }
+    
+    .discounts-trw .item-trw-img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-trw {
+        font-size: 16px !important;
+        line-height: 21.79px !important;
+    }
+
+    .margin-bottom-trw {
+        margin-bottom: 40px !important;
+    }
+    
+    .trw-title {
+        font-size: 20px !important;
+        line-height: 27.24px;
+    }
+    
+    .trw-subtitle {
+        font-size: 20px !important;
+        line-height: 27.24px;
+    }
+    
+    .trw__button {
+        font-size: 14px !important;
+        line-height: 19.07px;
+    }
+    
+    .trw-list {
+        gap: 10px;
+    }
+    
+    .trw-list li {
+        padding-left: 26px !important;
+    }
+    
+    .trw-list li::before {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .banner-trw::before,
+    .banner-trw::after {
+        height: calc(100% - 104px);
+    }
+    
+    .banner-trw__bg {
+        padding: 62px 40px;
+    }
+    
+    .banner-trw__content {
+        gap: 30px;
+        font-size: 16px !important;
+        line-height: 21.79px !important;
+    }
+    
+    .banner-trw__title {
+        font-size: 32px !important;
+        line-height: 38.4px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .banner-trw__list {
+        margin: 0 auto !important;
+        flex-direction: column;
+    }
+    
+    .banner-trw__list li {
+        padding-left: 28px !important;
+    }
+    
+    .banner-trw__list li::before {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+    }
+    
+    .banner-trw__desc {
+        font-size: 12px !important;
+        line-height: 16.34px !important;
+    }
+    
+    .desc-trw {
+        font-size: 16px !important;
+        line-height: 21.79px !important;
+    }
+        
+    .programs-trw-content {
+        display: grid;
+        grid-template-columns: repeat(3,  1fr);
+        gap: 13px;
+    }
+
+    .programs-trw-content .item-trw {
+        max-width: 100%;
+        padding: 17px 5px 20px;
+        border-radius: 16px;
+        background: var(--white);
+    }
+    
+    .programs-trw-content .item-trw-img {
+        max-width: 80px;
+        max-height: 74px;
+        padding: 5px;
+    }
+    
+    .programs-trw-content .item-trw-subtitle {
+        font-size: 14px !important;
+        line-height: 19.07px !important;
+    }
+        
+    .programs-trw-content .tooltip-info_trw {
+        left: 50%;
+        width: 140px;
+      }
+        
+      .tooltip-info_trw>span {
+        padding: 5px;
+        font-size: 12px !important;
+        line-height: 14px !important;
+      }
+    
+    .tooltip-info_trw>span:before {
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    
+    .programs-trw-content .item-trw-price .price {
+        font-size: 18px !important;
+        line-height: 24.51px !important;
+    }
+    
+    .discounts-trw {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    
+    .discounts-trw .col-trw {
+        gap: 14px;
+        max-width: 100%;
+    }
+    
+    .discounts-trw .item-trw {
+        padding: 20px;
+    }
+    
+    .descriptions-trw .item-trw {
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .descriptions-trw .item-trw> .container-trw {
+        gap: 10px;
+    }
+
+    .descriptions-trw .item-trw-img img {
+        max-width: 100px;
+        max-height: 92px;
+    }
+    
+    .descriptions-trw .item-trw-subtitle {
+        margin-bottom: 10px;
+    }
+    
+    .descriptions-trw .trw__slider {
+        margin-bottom: 10px;
+    }
+    
+    .descriptions-trw .slider-screen  {
+        padding: 0 15px;
+    }
+    
+    .descriptions-trw .slider-screen::after,
+     .descriptions-trw .slider-screen::before {
+        display: none;
+    }
+    
+    .trw__slider .swiper-pagination {
+        padding-top: 5px;
+    }
+    
+    .trw__slider .swiper-button {
+        display: none !important;
+    }
+}
+
+/* @media (max-width: 500px) {
+    .programs-trw-content {
+        display: grid;
+        grid-template-columns: repeat(3,  1fr);
+        gap: 13px;
+    }
+    
+    .programs-trw-content .item-trw {
+        max-width: 100%;
+    }
+    
+} */
+
+/*popup start */
+
+.trw-popup,
+.trw-popup-thanks {
+    display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 150;
+	background-color: rgba(0, 0, 0, .7);
+	transition: opacity 200ms ease-in;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.trw-popup.active,
+.trw-popup-thanks.active{
+	display: block;
+}
+
+.trw-popup-dialog {
+	position: relative;
+	width: 570px;
+	min-height: 100vh;
+	padding: 15px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.trw-popup-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 30px 35px 40px;
+	outline: 0;
+	border-radius: 12px;
+}
+ 
+.trw-popup-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    text-align: center;
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.trw-popup-thanks .trw-popup-body {
+    align-items: flex-start;
+    text-align: center;
+}
+
+.trw-popup-thanks .trw-popup-body p {
+    margin: 20px auto;
+}
+
+.trw-popup-thanks .trw-popup__close-thanks {
+    align-self: flex-end;
+}
+
+.trw-popup h2,
+.trw-popup-thanks h2 {
+	font-size: 32px;
+    font-weight: normal;
+    margin: 0 auto;
+}
+
+.trw-popup__title {
+    width: 100%;
+    display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.trw-popup__close {
+    align-self: flex-end;
+}
+
+.trw-popup__close .trw__close-icon,
+.trw-popup__close-thanks .trw__close-icon,
+.trw-popup__close-message .trw__close-icon {
+	display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #b2b2b2;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.trw-popup__close .trw__close-icon:hover,
+.trw-popup__close-thanks .trw__close-icon:hover,
+.trw-popup__close-message .trw__close-icon:hover {
+    color: #1c80c5;
+}
+
+.trw-popup__form-block {
+    display: flex;
+	justify-content: stretch;
+	align-items: flex-start;
+	flex-direction: column;
+    gap: 30px;
+    padding: 10px 35px;
+}
+
+.trw-form {
+    width: 100%; 
+    display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-direction: column;
+    gap: 20px;
+}
+
+.trw-form input,
+.trw-form textarea {
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    line-height: normal;
+    transition: border-color .1s;
+    padding: 6px 8px;
+    font-size: 16px;
+    height: 36px;
+    outline: none;
+    resize: none;
+}
+
+.trw-form textarea {
+    height: auto;
+}
+
+.trw-form input:active,
+.trw-form input:focus {
+    border: 1px solid #1c80c5;
+}
+
+.trw-popup p {
+    margin: 0;
+}
+
+.trw-form-error,
+.trw-form-success {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .trw-popup.active {
+        overflow-y: auto;
+    }
+
+	.trw-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.language-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;   
+	}
+
+    .trw-popup-thanks .trw-popup__close-thanks,
+    .trw-popup__close {
+        margin-right: -25px;
+    }
+
+	.trw-popup-content {
+		padding: 10px 35px 40px;
+	}
+
+    .trw-popup h2,
+    .trw-popup-thanks h2 {
+        font-size: 22px;
+    }
+
+    .trw-popup__form-block {
+        padding: 10px 0;
+    }
+
+    .trw-popup-thanks .trw-popup-body p {
+        margin: 10px auto;
+    }
+
+}
+/*popup end*/
+</style>
+<main>
+
+    <div class="wrapper-trw">
+        <!-- Banner -->
+        <div class="banner-trw margin-bottom-trw container-trw">
+            <div class="banner-trw__bg">
+                <div class="banner-trw__content ">
+                    <h1 class="banner-trw__title">
+                        <span class="trw-blue-text">Встановлення навігації</span>для TIR
+                    </h1>
+                    <p>Замовляйте дистанційне встановлення навігації для вантажівок на ваш пристрій: </p>
+                    <ul class="banner-trw__list trw-list">
+                        <li>Планшет</li>
+                        <li>Смартфон</li>
+                        <li>навігатор</li>
+                    </ul>
+                    <div class="trw__button open-popup_trw">
+                        <span class="button-content">Залишити заявку</span>
+                    </div>
+                    <p class="banner-trw__desc">Залиште заявку, і ми зв'яжемось з вами протягом кількох хвилин!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description block -->
+        <div class="desc-trw container-trw margin-bottom-trw">
+            <p>Для встановлення навігації має бути стабільне інтернет-з'єднання. <br>
+                Замовити послугу можна за телефоном на сайті або залишити заявку на цій сторінці.
+                Також можна прислати пристрій до нас в місто Wroclaw.
+            </p>
+        </div>
+
+        <!-- Programs -->
+        <div class="programs-trw container-trw margin-bottom-trw">
+            <h2 class="trw-title">Види та вартість програм, які ми встановлюємо</h2>
+            <div class="programs-trw-content">
+                <div class="item-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_1.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle"> iGO<br> Primo</p>
+                    <div class="item-trw-price">
+                        <span class="price trw-blue-text">10€</span>
+                    </div>
+
+                    <a class="trw__button" href="#igo-primo">
+                        <span class="button-content">Опис</span>
+                    </a>
+                </div>
+
+                <div class="item-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_2.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle"> iGO<br> NextGen</p>
+                    <div class="item-trw-price">
+                        <span class="price trw-blue-text">12€</span>
+                    </div>
+
+                    <a class="trw__button" href="#igo-nextgen">
+                        <span class="button-content">Опис</span>
+                    </a>
+                </div>
+
+                <div class="item-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_3.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle"> Sygic<br> Truck</p>
+                    <div class="item-trw-price">
+                        <span class="price trw-blue-text">10€</span>
+                    </div>
+
+                    <a class="trw__button" href="#sygic-truck">
+                        <span class="button-content">Опис</span>
+                    </a>
+                </div>
+
+                <div class="item-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_4.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle">Оновлення<br> карт</p>
+                    <div class="item-trw-price">
+                        <span class="price trw-blue-text">10€</span>
+                    </div>
+
+                    <a class="trw__button" href="#update-map">
+                        <span class="button-content">Опис</span>
+                    </a>
+                </div>
+
+                <div class="item-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_5.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle">CamSam<br> PLUS</p>
+                    <button class="item-trw-price bonus">
+                        <span class="price trw-blue-text">Бонус</span>
+                        <span class="tooltip-info_trw">
+                            <span>Бонус, підписка на 3 місяці</span>
+                        </span>
+                    </button>
+
+                    <a class="trw__button" href="#bonusy">
+                        <span class="button-content">Опис</span>
+                    </a>
+                </div>
+
+                <div class="item-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_6.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle">Tochki Interesa Cadence</p>
+                    <button class="item-trw-price bonus" >
+                        <span class="price trw-blue-text">Бонус</span>
+                        <span class="tooltip-info_trw">
+                            <span>Бонус, підписка на 3 місяці</span>
+                        </span>
+                    </button>
+
+                    <a class="trw__button" href="#bonusy">
+                        <span class="button-content">Опис</span>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Discounts -->
+        <div class="discounts-trw container-trw margin-bottom-trw">
+
+            <div class="col-trw col1-trw">
+
+                <div class="item-trw">
+                    <div class="item-trw-row">
+                        <div class="item-trw-img">
+                            <img src="/content/uploads/images/discount-icon_1.svg" alt="icon" width="65" height="65">
+                        </div>
+                        <p class="trw-subtitle">Знижки</p>
+                    </div>
+                    <ul class="trw-list">
+                        <li>Встановлення двох програм - <b>15€</b></li>
+                        <li>Весь комплект програм - <b>18€</b></li>
+                    </ul>
+                </div>
+
+                <div class="item-trw">
+                    <div class="item-trw-row">
+                        <div class="item-trw-img">
+                            <img src="/content/uploads/images/discount-icon_2.svg" alt="icon" width="65" height="65">
+                        </div>
+                        <p class="trw-subtitle" id="update-map">Примітки</p>
+                    </div>
+                    <ul class="trw-list">
+                        <li>На момент встановлення будуть найновіші <b>карти, радари та Точки Інтересу.</b></li>
+                        <li>Нові карти для усіх програм виходять <b>2 рази в рік - весною та осінню.</b></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-trw">
+
+                <div class="item-trw">
+                    <div class="item-trw-row">
+                        <div class="item-trw-img">
+                            <img src="/content/uploads/images/discount-icon_3.svg" alt="icon" width="65" height="65">
+                        </div>
+                        <p class="trw-subtitle" id="bonusy">БОНУСИ</p>
+                    </div>
+                    <p><b>До встановлення будь-якої навігації, ви додатково отримаєте такі програми:</b></p>
+                    <ul class="trw-list">
+                        <li><b>Антирадар CamSam PLUS,</b> який можна використовувати разом з навігацією. Одна із
+                            найкращих програм яка попереджає про мобільні та стаціонарні камери контролю
+                            швидкості, ремонти та затори по Європі. </li>
+                        <li><b>Premium-підписка терміном 3 місяці</b> на додаток <b>Tochki Interesa Cadence</b>
+                            (тільки для нових користувачів). Дуже корисна програма для далекобійників, де можна
+                            знайти безліч парковок, промзон, магазинів з під'їздом та інших корисних місць по
+                            Європі.</li>
+                        <li><b>Map2Geo</b> - корисна програма для перенесення координат з Google-карт в навігацію
+                            iGO NextGen та Sygic Truck.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Program description -->
+         <div class="descriptions-trw">
+            <h2 class="trw-title margin-bottom-trw container-trw">Описи та скріншоти програм</h2>
+
+            <div class="item-trw" id="igo-primo">
+               <div class="container-trw">
+                    <div class="item-trw-img">
+                        <img src="/content/uploads/images/program_trw_1.png" alt="program_trw_img" width="134" height="122">
+                    </div>
+                    <p class="item-trw-subtitle">iGO Primo</p>
+                    <ul class="trw-list">
+                        <li>Це одна з найстаріших програм навігації для TIR. Досі має велику популярність як у водіїв з досвідом, так і у новачків які швидко освоюють дану навігацію.</li>
+                        <li>Чудова надійна і безвідказна програма, в якій є все необхідне для комфортної роботи. iGO Primo проста, зручна і буде зрозуміла кожному. Присутні іконки популярних заправок, магазинів і парковок, а також Точки Інтересу. iGO Primo чудово прокладає маршрути для вантажівок, є можливість пошуку парковок по маршруту, об'їзду певних ділянок чи країн, можливість додавати проміжні точки, пошук координат та багато інших корисних функцій.</li>
+                        <li>Дану навігацію ми рекомендуємо для початкових водіїв або для тих кому потрібна надійна і легка в освоєнні навігація.</li>
+                        <li>Встановлюється на планшети, навігатори та старі моделі телефонів. </li>
+                    </ul>
+               </div>
+
+                <div class="slider-screen">
+                    <div class="trw__slider trw__slider_1">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_1.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_2.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_3.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_4.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_5.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_6.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_7.jpg" alt="primo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/content/uploads/images/igo-primo_8.jpg" alt="primo">
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-button swiper-button-next"></div>
+                        <div class="swiper-button swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="container-trw">
+                    <div class="trw__button open-popup_trw">
+                        <span class="button-content">Залишити заявку</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-trw" id="igo-nextgen">
+                <div class="container-trw">
+                     <div class="item-trw-img">
+                         <img src="/content/uploads/images/program_trw_2.png" alt="program_trw_img" width="134" height="122">
+                     </div>
+                     <p class="item-trw-subtitle">iGO NextGen</p>
+                     <ul class="trw-list">
+                         <li>Нове покоління програми iGO. Більш професійна і складніша навігація. Встановлений додаткової модифікований скін від майстра Pongo. Скін розширює можливості та змінює зовнішній вигляд програми. iGO NextGen використовує ті ж самі карти що й iGO Primo, і загалом логіка цих програм схожа, але NextGen більш сучасна і функціональна. </li>
+                         <li>Доступно набагато більше різних налаштувань, що дозволяє максимально налаштувати програму під свої потреби. Є можливість виносити кнопки швидкого доступу в кабіну і налаштовувати їх, а все керування здійснюється через кнопку "Меню" в нижньому правому куті. Присутні іконки популярних заправок, магазинів і парковок, а також Точки Інтересу.</li>
+                         <li>При доступі в інтернет програма показує затори, ремонти і закриті дороги, але не завжди актуально, тому рекомендуємо звіряти з Google Maps. Є зручна функція відправки координат на Google Maps, можна без проблем переглянути паркінг чи якийсь заїзд. І навпаки, за допомогою програми Map2Geo, яку ми встановимо бонусом, можна перенести координати з Google Maps в iGO NextGen.</li>
+                         <li>Адаптована під усі пристрої на Android.</li>
+                     </ul>
+                </div>
+
+                 <div class="slider-screen">
+                     <div class="trw__slider trw__slider_1">
+                         <div class="swiper-wrapper">
+ 
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_1.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_2.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_3.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_4.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_5.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_6.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_7.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/igo-nextgen_8.jpg" alt="primo">
+                             </div>
+                            
+                         </div>
+                         <div class="swiper-button swiper-button-next"></div>
+                         <div class="swiper-button swiper-button-prev"></div>
+                         <div class="swiper-pagination"></div>
+                     </div>
+                 </div>
+
+                 <div class="container-trw">
+                     <div class="trw__button open-popup_trw">
+                         <span class="button-content">Залишити заявку</span>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="item-trw" id="sygic-truck">
+                <div class="container-trw">
+                     <div class="item-trw-img">
+                         <img src="/content/uploads/images/program_trw_3.png" alt="program_trw_img" width="134" height="122">
+                     </div>
+                     <p class="item-trw-subtitle">Sygic Truck</p>
+                     <ul class="trw-list">
+                         <li>Sygic Truck - одна з сучасних навігацій для вантажівок. Не така популярна як iGO, але теж має своїх прихильників. За відгуками водіїв вона добре показує багато парковок по маршруту та має сучасний і приємний вигляд.</li>
+                         <li>Sygic Truck часто ставлять транспортні компанії на робочі планшети. В налаштуваннях можна виставити небезпечний вантаж (ADR). Працює плавно і стабільно, значно відрізняється від iGO, тому до неї треба звикати. </li>
+                         <li>Є можливість пошуку координат, прокладання декількох варіантів маршрутів та багато інших функцій. За допомогою програми Map2Geo можна переносити координати з Google Maps в Sygic Truck. </li>
+                         <li>Ми рекомендуємо встановлювати її разом з iGO, і потім вже під час їзди обирати для себе оптимальний варіант. </li>
+                         <li>Адаптована під усі пристрої на Android.</li>
+                     </ul>
+                </div>
+
+                 <div class="slider-screen">
+                     <div class="trw__slider trw__slider_1">
+                         <div class="swiper-wrapper">
+ 
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_1.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_2.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_3.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_4.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_5.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_6.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_7.jpg" alt="primo">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="/content/uploads/images/sygic-truck_8.jpg" alt="primo">
+                             </div>
+                            
+                         </div>
+                         <div class="swiper-button swiper-button-next"></div>
+                         <div class="swiper-button swiper-button-prev"></div>
+                         <div class="swiper-pagination"></div>
+                     </div>
+                 </div>
+
+                 <div class="container-trw">
+                     <div class="trw__button open-popup_trw">
+                         <span class="button-content">Залишити заявку</span>
+                     </div>
+                 </div>
+            </div>
+             
+
+         </div>
+
+        <!-- Call-back popup -->
+        <div class="trw-popup">
+            <div class="trw-popup-dialog">
+                <div class="trw-popup-content">
+                    <div class="trw-popup-body">
+                        <div class="trw-popup__title">
+                            <h2>Залишити заявку</h2>
+                            <div class="trw-popup__close">
+                                <span class="trw__close-icon">×</span>
+                            </div>
+                        </div>
+                        <div class="trw-popup__form-block">
+                            <p class="trw-popup-msg ">Вкажіть ваш номер телефону та ім'я.
+                                Ми зателефонуємо вам за кілька хвилин.</p>
+                            <form action="" class="trw-form">
+                                <input type="text" name="user_name" placeholder="Ваше ім’я">
+                                <input type="tel" name="user_phone" maxlength="13" placeholder="Ваш телефон">
+                                <textarea name="user_msg" id="" rows="5" placeholder="Коментар"></textarea>
+                                <button class="trw__button">ВІДПРАВИТИ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thanks popup -->
+        <div class="trw-popup-thanks">
+            <div class="trw-popup-dialog">
+                <div class="trw-popup-content">
+                    <div class="trw-popup-body">
+                        <div class="trw-popup__title">
+                            <h2>Ваша заявка прийнята!</h2>
+                            <div class="trw-popup__close-thanks">
+                                <span class="trw__close-icon">×</span>
+                            </div>
+                        </div>
+                        <p>Mайстер звяжеться з Вами найближчім часом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
+
+var swiperOurWorks = new Swiper(".trw__slider_1", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,   
+        },
+    },
+});
+
+// popup start
+
+if (document.querySelector(".trw-popup") !== null) {
+
+    window.addEventListener("click", function (e) {
+
+        if(e.target.closest('.open-popup_trw')) {
+            e.preventDefault();
+            document.querySelector(".trw-popup").classList.add("active");
+            document.body.style.overflow = "hidden";
+        } else {
+            if(e.target.closest('.trw-popup__close')) {
+                e.preventDefault();
+                document.querySelector(".trw-popup").classList.remove("active");
+                document.body.style.overflow = "auto";
+            }
+    
+            if (document.querySelector(".trw-popup.active") && !e.target.closest('.trw-popup-content')) {
+                document.querySelector(".trw-popup").classList.remove("active");
+                document.body.style.overflow = "auto";
+            }
+        }  
+    }); 
+
+  };
+
+if (document.querySelector(".trw-popup-thanks") !== null) {
+
+    document.querySelector(".trw-popup__close-thanks").addEventListener('click', (e)=>{
+        e.preventDefault();
+            document.querySelector(".trw-popup-thanks").classList.remove("active");
+            document.body.style.overflow = "auto";
+      })
+};
+  // popup end
+
+</script>
