@@ -225,6 +225,7 @@ a {
 
 .banner-trw__list {
     margin: 0 auto 20px !important;
+    gap: 44px;
 }
 
 .banner-trw__list li {
@@ -369,7 +370,7 @@ a {
 	margin-left: -16px;
 }
 
-.programs-trw-content .item-trw-price.bonus .price::after {
+/* .programs-trw-content .item-trw-price.bonus .price::after {
     content: "";
     display: inline-block;
     width: 18px;
@@ -378,7 +379,7 @@ a {
     background: url('data:image/svg+xml,<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_381_929)"><path d="M9.5 0.05896C4.52528 0.05896 0.5 4.0846 0.5 9.05896C0.5 14.0337 4.52564 18.059 9.5 18.059C14.4747 18.059 18.5 14.0333 18.5 9.05896C18.5 4.08424 14.4743 0.05896 9.5 0.05896ZM9.5 16.6527C5.30259 16.6527 1.90625 13.2561 1.90625 9.05896C1.90625 4.86155 5.30287 1.46521 9.5 1.46521C13.6974 1.46521 17.0938 4.86183 17.0938 9.05896C17.0938 13.2564 13.6971 16.6527 9.5 16.6527Z" fill="%232CB2FF"/><path d="M9.5 7.59399C9.11166 7.59399 8.79688 7.90878 8.79688 8.29712V12.825C8.79688 13.2133 9.11166 13.5281 9.5 13.5281C9.88834 13.5281 10.2031 13.2133 10.2031 12.825V8.29712C10.2031 7.90878 9.88834 7.59399 9.5 7.59399Z" fill="%232CB2FF"/><path d="M9.5 6.73303C10.0242 6.73303 10.4492 6.30805 10.4492 5.78381C10.4492 5.25957 10.0242 4.83459 9.5 4.83459C8.97576 4.83459 8.55078 5.25957 8.55078 5.78381C8.55078 6.30805 8.97576 6.73303 9.5 6.73303Z" fill="%232CB2FF"/></g><defs><clipPath id="clip0_381_929"><rect width="18" height="18" fill="white" transform="translate(0.5 0.161499)"/></clipPath></defs></svg>');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .programs-trw-content .item-trw-price .price {
     color: var(--accent);
@@ -422,6 +423,7 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
+    color: var(--accent);
 }
 
 .discounts-trw .item-trw-img {
@@ -446,14 +448,19 @@ a {
 
 .descriptions-trw .trw-title {
     text-align: center;
+    margin-bottom: 20px !important;
 }
 
 .descriptions-trw .item-trw {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 100px;
+    padding: 50px 0;
     scroll-margin-top: 20px;
+}
+
+.descriptions-trw .item-trw:not(:last-of-type) {
+    border-bottom: 1px solid #fff;
 }
 
 .descriptions-trw .item-trw> .container-trw {
@@ -668,6 +675,8 @@ a {
     .banner-trw__list {
         margin: 0 auto !important;
         flex-direction: column;
+        gap: 10px;
+        text-align: left;
     }
     
     .banner-trw__list li {
@@ -748,10 +757,14 @@ a {
     .discounts-trw .item-trw {
         padding: 20px;
     }
+
+    .descriptions-trw .trw-title {
+        margin-bottom: 10px !important;
+    }
     
     .descriptions-trw .item-trw {
         gap: 20px;
-        margin-bottom: 60px;
+        padding: 30px 0;
     }
     
     .descriptions-trw .item-trw> .container-trw {
@@ -772,7 +785,7 @@ a {
     }
     
     .descriptions-trw .slider-screen  {
-        padding: 0 15px;
+        padding: 0;
     }
     
     .descriptions-trw .slider-screen::after,
@@ -1084,7 +1097,7 @@ a {
                     <div class="item-trw-img">
                         <img src="/content/uploads/images/program_trw_4.png" alt="program_trw_img" width="134" height="122">
                     </div>
-                    <p class="item-trw-subtitle">Odnowienie<br> karty</p>
+                    <p class="item-trw-subtitle">Aktualizacja<br> map</p>
                     <div class="item-trw-price">
                         <span class="price trw-blue-text">10€</span>
                     </div>
@@ -1415,22 +1428,33 @@ a {
 
 var swiperOurWorks = new Swiper(".trw__slider_1", {
     loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
+    spaceBetween: 15, 
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
     },
     breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30,   
-        },
+      769: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 3500,
     },
 });
 

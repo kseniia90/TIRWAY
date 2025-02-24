@@ -14,23 +14,57 @@
 // }
 
 var swiperOurWorks = new Swiper(".trw__slider_1", {
+    // loop: true,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    // },
+    // autoplay: {
+    //     delay: 3500,
+    // },
+    // breakpoints: {
+    //     0: {
+    //         slidesPerView: 1,
+    //         spaceBetween: 15,
+    //     },
+    //     768: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,  
+    //         slidesPerGroup: 2,
+             
+    //     },
+    // },
     loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
+    spaceBetween: 15, 
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
     },
     breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30,   
-        },
+      769: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 3500,
     },
 });
 
